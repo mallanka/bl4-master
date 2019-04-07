@@ -190,7 +190,7 @@ namespace Basic.Lesson_4._1
         //B4-P22_25 *While_Akinator100Numbers
         public static void B4_P22_25_While_Akinator100Numbers()
         {
-            Console.WriteLine("make a number. answer 'yes' or 'no' only");
+            Console.WriteLine("make a number. answer only 'yes' or 'no'");
             string answer = null;
             Console.WriteLine("is it even number?");
             answer = Console.ReadLine().ToLower();
@@ -208,6 +208,28 @@ namespace Basic.Lesson_4._1
                         answer = Console.ReadLine().ToLower();
                         if (answer == "yes")
                         {
+                            Console.WriteLine("is it multiple of 25?");
+                            answer = Console.ReadLine().ToLower();
+                            if (answer == "yes")
+                            {
+                                Console.WriteLine("is the sum of digits more than 3?");
+                                answer = Console.ReadLine().ToLower();
+                                if (answer == "yes")
+                                {
+                                    Console.WriteLine("you made a number 50");
+                                }
+                                else
+                                {
+                                    Console.WriteLine("you made a number 100");
+                                }
+                            }
+                            else
+                            {
+                                Console.WriteLine("you made a number 70");
+                            }
+                        }
+                        else
+                        {
                             Console.WriteLine("is it multiple of 15?");
                             answer = Console.ReadLine().ToLower();
                             if (answer == "yes")
@@ -217,19 +239,6 @@ namespace Basic.Lesson_4._1
                             else
                             {
                                 Console.WriteLine("you made a number 10");
-                            }
-                        }
-                        else
-                        {
-                            Console.WriteLine("is it multiple of 25?");
-                            answer = Console.ReadLine().ToLower();
-                            if (answer == "yes")
-                            {
-                                Console.WriteLine("you made a number 50");
-                            }
-                            else
-                            {
-                                Console.WriteLine("you made a number 70");
                             }
                         }
                     }
